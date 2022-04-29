@@ -1,6 +1,19 @@
+/*####################---------body---------####################*/
+
 body{
 	font-family: sans-serif;
 }
+
+
+
+
+
+
+
+
+
+/*####################---------Header & Navbar---------############*/
+
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -73,9 +86,20 @@ body{
   color: #fff;
 }
 
-/**
-* Mobile Navigation 
+
+
+
+
+
+
+
+
+
+
+/*####################---------Header & Navbar---------####################
+ Mobile Navigation 
 */
+
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -100,7 +124,7 @@ body{
   top: 0;
   right: 0;
   left: 0;
-  bottom: 20%;
+  bottom: 16%;
   /*background: rgba(4, 7, 9, 0.9);*/
   transition: 0.3s;
   z-index: 999;
@@ -133,6 +157,14 @@ body{
 }
 
 
+
+
+
+
+
+
+/*################---------Background top Image Section---------################*/
+
 .hero-container button{
   font-size: 17px;
   letter-spacing: 2px;
@@ -141,31 +173,19 @@ body{
   padding:20px 30px 20px 30px;
   border:3px solid white;
   color: white;
+  margin-top: 0;
 }
 .hero-container button:hover{
   color: white;
 }
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 #hero {
   height: 1050px;
-  background: url("/static/img/bg-shape.jpg");
+  background: url("/static/img/bgimg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   background-position: right 160px bottom;
-}
-@media screen and (max-width: 1100px){
-	#hero {
-  height: 1050px;
-  background: url("/static/img/bg-shape.jpg");
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  background-color: #F2F6FD;
 }
 #hero .hero-container {
   position: absolute;
@@ -179,29 +199,49 @@ body{
   flex-direction: column;
   text-align: left;
 }
+
 #hero h1 {
-  margin: -10px 0 40px 0;
-  font-size: 53px;
-  font-weight: 700;
-  line-height: 15px;
+  margin: -10px 0 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 35px;
+  line-height: 30px;
   color: #fff;
+  animation: typing 4.5s forwards;
+   width: 0;
 }
 #hero h3 {
-  color: #eee;
-  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 53px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4.5s forwards;
+  animation-delay: 1s;
+  width: 0;
 }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
+
 #hero p{
   font-size: 24px;
   letter-spacing: 4px;
-  line-height: 10px;
+  line-height: 20px;
   word-spacing: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 6.5s forwards;
+  animation-delay: 2.5s;
+   width: 0;
+
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: scroll;
-  }
-}
 .phone{
 	background-color: white;
 	border-radius: 50px;
@@ -219,210 +259,6 @@ body{
 }
 
 
-.off-seo-page small{
-	font-size: 20px;
-}
-.off-seo-page h1{
-	font-size: 33px;
-}
-.off-seo-page button{
-	font-size: 17px;
-	letter-spacing: 2px;
-	font-weight: bolder;
-	border-radius: 50px;
-	padding:20px 30px 20px 30px;
-	border:3px solid #3763bb;
-	color: #3763bb;
-}
-.off-seo-page button:hover{
-	color: white;
-	background-color: #3763bb;
-}
-.off-seo-page .cards{
-	background-image: linear-gradient(to right, #4f5dff , #28a7ff);
-	margin-right: -15px;
-	color:white;
-	padding: 20px 170px 20px 30px;
-	font-size: 19px;
-	border-radius:6px 0 0 6px;
-}
-/*.seo-package{
-	margin-top: 200px;
-}*/
-.seo-package .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.seo-package .basic-header{
-	background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
-}
-.seo-package .basic-header p{
-	font-size: 17px;
-}
-.seo-package .basic-header h3{
-	font-size: 23px;
-}
-.seo-package .basic-header h4{
-	font-size: 21px;
-}
-.seo-package .basic-body{
-
-	background-color:#f2f6fc; 
-}
-.seo-package .basic-body ul{
-	list-style: none;
-}
-.seo-package .basic-body ul li{
-	border-bottom:1px solid lightgrey;
-	color: #9caaf2;
-	padding:15px 5px 15px 5px;
-	margin-left: -30px;
-	font-size: 15px;
-	margin-right: 12px;
-}
-.seo-package .basic-body ul li span i{
-	font-size: 18px;
-	color:#63d141;
-	float: right;
-	}
-.seo-package .basic-body button{
-	background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
-	color: white;
-	border-radius: 50px;
-	padding: 15px 90px 15px 90px;
-	font-size: 18px;
-  margin-bottom: 0;
-}
-
-
-/*.seo-package{
-	margin-top: 150px;
-}*/
-.seo-package .standard-card{
-	/*width: 26em;
-	margin-left: -33px;
-	height: 740px; */
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	/*z-index: 1;
-	margin-top: -58px;*/
-}
-.seo-package .standard-header{
-	background-image: linear-gradient(to right, #905cea , #6458ee);
-}
-.seo-package .standard-header .recomend{
-	background-color: 
-	white; color: #6458ee;
-	border-radius:50px;
-	font-size: 10px;
-	margin: auto;
-width: 45%;
-
-}
-.seo-package .standard-header .standard{
-	color: white;
-	font-size: 17px;
-}
-.seo-package .standard-header h3{
-	font-size: 23px;
-}
-.seo-package .standard-header h4{
-	font-size: 24px;
-  letter-spacing: 1px;  
-}
-.seo-package .standard-body ul{
-	list-style: none;
-}
-/*.seo-package .standard-body ul li{
-	border-bottom:1px solid lightgrey;
-	color: #9caaf2;
-	padding:15px 5px 15px 5px;
-	margin-left: -30px;
-	font-size: 17px;
-	margin-right: 12px;
-}*/
-.seo-package .standard-body ul li span i{
-	font-size: 18px;
-	color:#63d141;
-	float: right;
-	}
-.seo-package .standard-body button{
-	background-image: linear-gradient(to right, #905cea , #6458ee);
-	color: white;
-	border-radius: 50px;
-	padding: 15px 90px 15px 90px;
-	font-size: 18px;
-}
-
-
-.reviews{
-  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
-  align-items: center;
-  justify-content: center;
-}
-.reviews p{
-	font-size: 20px;
-}
-.reviews h1{
-	font-size: 26px;
-	font-weight: bolder;
-}
-#myCarousel {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
-
-
-footer{
-  background-image: linear-gradient(to right, #1f2985 , #165b93);
-  color: white;
-  align-items: center;
-  justify-content: center;
-  /*text-align: center;*/
-}
-footer ul li{
-	list-style: none;
-	padding: 10px 0 10px 0;
-	margin-left: -37px;
-}
-footer a{
-	text-decoration: none;
-	color: inherit;
-}
-footer ul li span,p i,.news-letter span{
-	color: #01c698;
-}
-footer p i{
-	font-size: 22px;
-}
-footer p{
-	margin-bottom: 20px;
-}
-footer .mso{
-	font-family: Tahoma,sans-serif;
-	font-size: 50px;
-	/*font-weight: 900;*/
-}
-footer h1{
-	font-size: 30px;
-	/*margin-top: 20px;*/
-}
-footer .our-services{
-}
-.news-letter button{
-	font-size: 20px;
-}
-
-
-
-
-.card .cards .img{
-  background: url("/static/img/bg-shape.jpg");
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center fixed;
-}
 
 
 
@@ -440,28 +276,11 @@ footer .our-services{
 
 
 
-
-
-
-
-
-@media (max-width: 767px) {
-  .col-2 {
-    width: 100%;
-  }
-}
-
-
-
+/*####################---------Signup Page---------############*/
 
 .wrapper--w780 {
   max-width: 700px;
 }
-
-
-/* ==========================================================================
-   #BUTTON
-   ========================================================================== */
 .btn1 {
   display: inline-block;
   line-height: 40px;
@@ -520,7 +339,6 @@ footer .our-services{
   position: absolute;
   left: 46%;
   top: 23%;
-  /*right: 30%;*/
 }
 
 .card-3 {
@@ -563,18 +381,31 @@ footer .our-services{
   top: 0;
   left: 0;
   right: 0;
-  /*z-index: -1;*/
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-
-
 .card-3 .card-body {
   padding: 19px 26px;
   padding-bottom: 26px;
   display: table-cell;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*####################---------SEO Section Services---------############*/
+.services{
+  margin-top: -180px;
+  background-color: #F2F6FD;
+  padding-top: 10px;
+}
 .seo-section ul li span i{
   color: #4390f2;
   margin-top: 10px;
@@ -601,7 +432,7 @@ footer .our-services{
   color: #4390f2;
 }
 .seo-section small{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .row-1 .crts{
@@ -613,392 +444,249 @@ footer .our-services{
 .row-2{
   margin-top: -150px;
 }
-
-@media screen and (max-width: 1660px){
-  .navbar .phone{
-    margin-left: 300px;
-    margin-top: -8px;
-    float: left;
-   padding: 2px 4px 2px 4px;
-    font-size: 14px;
-  }
+.service{
+  margin-top: -100px;
 }
-
-@media screen and (max-width: 1560px){
-  .navbar .phone{
-    margin-left: 200px;
-    margin-top: -8px;
-    float: left;
-   padding: 2px 4px 2px 4px;
-    font-size: 14px;
-  }
+.service h1{
+  font-size: 35px;
 }
-@media screen and (max-width: 1460px){
-  .navbar .phone{
-    margin-left: 100px;
-    margin-top: -8px;
-    float: left;
-   padding: 2px 4px 2px 4px;
-    font-size: 14px;
-  }
-  .wrapper .card {
-  position: absolute;
-  right: 21%;
-  top: 32%;
-  /*margin:1px 10px 1px 10px;*/
+.seo-section .grow{
+  font-size: 44px;
 }
-
-.card-3 {
-  width: 40%;
-  display: table;
-
-}
-}
-@media screen and (max-width: 1340px){
-   .seo-package .basic-body button{
-  background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
-  color: white;
-  border-radius: 50px;
-  padding: 10px 40px 10px 40px;
-  font-size: 14px;
-}
-.card-3 {
-  width: 49%;
-  display: table;
-
-}
-.seo-package .col-md-6 .card:hover{
-  width: 100%;
-  height: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top:0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 1;
-}
-#hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: -17%;
-  left: 1%;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  text-align: left;
-}
-.navbar .phone{
-    margin-left: 0;
-    margin-top: -8px;
-    float: left;
-   padding: 2px 4px 2px 4px;
-    font-size: 14px;
-  }
-  .phone button{
-  border-radius: 50px;
-  padding: 10px 17px 10px 17px;
-  font-size: 14px;
-  color: white;
-  margin-left: 0;
-}
-}
-
-@media screen and (max-width: 991px){
-      .seo-section .service{
-  margin-top: 10px;
-}
-  }
-@media screen and (max-width: 1140px){
- .reviews .carousel-control-prev{
-    margin-left: -100px;
-    margin-top: 35px;
-    color: white;
-}
-
-.reviews .carousel-control-next{
-    margin-right: -100px;
-    color: white;
-    margin-top: 35px;
-}
-
-  #hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: -7%;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  text-align: left;
-}
-.image-1{
-  display: none;
-}
-.container-fluid .justify-content-bet{
-  justify-content: space-around;
-}
-#hero h1 {
-  margin: -10px 0 40px 0;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 15px;
-  color: #fff;
-}
-#hero h3 {
-  color: #eee;
-  font-size: 26px;
-}
-#hero p{
-  font-size: 17px;
-  letter-spacing: 4px;
-  line-height: 10px;
-  word-spacing: 10px;
-}
-.card-3 .card-heading h5{
- position: absolute;
- z-index: 1;
- top: 18%;
- left: 15px;
- font-size:22px;
- color: white;
-}
-.wrapper .card {
-  position: absolute;
-  left: 10%
-  top: 32%;
-  /*margin:1px 10px 1px 10px;*/
-}
-
-.card-3 {
-  width: 53%;
-  display: table;
-
-}
-.off-seo-page small{
-  font-size: 17px;
-}
-.off-seo-page h1{
+.seo-section h3{
   font-size: 25px;
 }
+.seo-section p{
+  font-size: 23px;
+  width: 70%;
+  float: center;
+  margin:auto;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+
+
+
+
+
+
+/*####################---------OFF & ON SEO Page---------############*/
+
+.off-seo-page small{
+	font-size: 20px;
+}
+.off-seo-page h1{
+	font-size: 33px;
+}
 .off-seo-page button{
-  font-size: 12px;
-  letter-spacing: 0;
-  font-weight: bolder;
-  border-radius: 50px;
-  padding:10px 15px 10px 15px;
-  border:2px solid #3763bb;
-  color: #3763bb;
+	font-size: 17px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	border-radius: 50px;
+	padding:20px 30px 20px 30px;
+	border:3px solid #3763bb;
+	color: #3763bb;
 }
 .off-seo-page button:hover{
-  color: white;
-  background-color: #3763bb;
+	color: white;
+	background-color: #3763bb;
 }
 .off-seo-page .cards{
-  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
-  margin-right: -15px;
-  color:white;
-  padding: 20px 17px 20px 30px;
-  font-size: 14px;
-  border-radius:6px 0 0 6px;
+	background-image: linear-gradient(to right, #4f5dff , #28a7ff);
+	margin-right: -15px;
+	color:white;
+	padding: 20px 170px 20px 30px;
+	font-size: 19px;
+	border-radius:6px 0 0 6px;
 }
+
+
+
+
+
+
+
+
+
+
+/*####################---------SEO Premium Packages---------############*/
+
+.seo-package .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px 0;
+}
+.seo-package .basic-header{
+	background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
+border-radius: 100px 0;
+position: relative;
+}
+.seo-package .pricingTable-signup{
+    background: linear-gradient(#52f6dd,#0ad8f0);
+    padding: 25px 0;
+    margin-top: -80px;
+    border-radius: 100px 0;
+}
+.seo-package .pricingTable-signup a:hover{
+    letter-spacing: 2px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+.seo-package .pricingTable-signup a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.seo-package .pricingTable-signup-1{
+    background: linear-gradient( to top, #37AF61,#68C266);
+    padding: 25px 0;
+    margin-top: -80px;
+    border-radius: 100px 0;
+}
+.seo-package .pricingTable-signup-1 a:hover{
+    letter-spacing: 2px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+.seo-package .pricingTable-signup-1 a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.seo-package .basic-header .price-value-premium{
+    color:#35ae61;
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    padding: 21px 0;
+    border: 5px solid #35ae61;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    font-weight: bold;
+    right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.seo-package .basic-header .price-value-standard{
+    color:#35ae61;
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    padding: 21px 0;
+    border: 5px solid #35ae61;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    font-weight: bold;
+    right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.seo-package .basic-header .price-value-basic{
+    color:#0ad8f0;
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    padding: 21px 0;
+    border: 5px solid #0ad8f0;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seo-package .basic-header p{
+	font-size: 17px;
+}
+.seo-package .basic-header h3{
+	font-size: 23px;
+}
+.seo-package .basic-header h4{
+	font-size: 21px;
+}
+.seo-package .basic-body{
+
+	/*background-color:#f2f6fc; */
+}
+.seo-package .basic-body ul{
+	list-style: none;
+}
+.seo-package .basic-body ul li{
+	border-bottom:1px solid lightgrey;
+	color: #9caaf2;
+	padding:15px 5px 15px 5px;
+	margin-left: -30px;
+	font-size: 15px;
+	margin-right: 12px;
+}
+.seo-package .basic-body ul li span i{
+	font-size: 18px;
+	color:#63d141;
+	float: right;
+	}
+.seo-package .basic-body button{
+	background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
+	color: white;
+	border-radius: 50px;
+	padding: 15px 90px 15px 90px;
+	font-size: 18px;
+  margin-bottom: 0;
+}
+.seo-package .standard-card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.seo-package .standard-header{
+	background-image: linear-gradient(to right, #905cea , #6458ee);
+}
+
+.seo-package .standard-header .recomend{
+	background-color: 
+	white; color: #6458ee;
+	border-radius:50px;
+	font-size: 10px;
+	margin: auto;
+width: 45%;
+
+}
+.seo-package .standard-header .standard{
+	color: white;
+	font-size: 17px;
+}
+.seo-package .standard-header h3{
+	font-size: 23px;
+}
+.seo-package .standard-header h4{
+	font-size: 24px;
+  letter-spacing: 1px;  
+}
+.seo-package .standard-body ul{
+	list-style: none;
+}
+.seo-package .standard-body ul li span i{
+	font-size: 18px;
+	color:#63d141;
+	float: right;
+	}
+.seo-package .standard-body button{
+	background-image: linear-gradient(to right, #905cea , #6458ee);
+	color: white;
+	border-radius: 50px;
+	padding: 15px 90px 15px 90px;
+	font-size: 18px;
 }
 .justify-content-bet{
   justify-content: space-between;
 }
-@media screen and (max-width: 950px){
-  .reviews .carousel-control-prev{
-    margin-left: -70px;
-    margin-top: 35px;
-    color: white;
+.seo-package h1, .seo-package small{
+  margin-left: 130px;
 }
-.reviews .carousel-control-next{
-    margin-right: -70px;
-    color: white;
-    margin-top: 35px;
-}
-    .wrapper .card {
-  overflow: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #fff;
-  position: absolute;
-  left: 5%;
-  top: 116%;
-}
-.seo-package .container-fluid h1{
-  margin-left: 0;
-  font-size: 25px;
-}
-.seo-package .container-fluid small{
-  margin-left: 0;
-  font-size: 22px;
-}
-.card-3{
-  width: 90%;
-  align-items: center;
-}
-.row-1 .crts{
-  margin-left: 0;
-}
-.row-1{
-  margin-top: 0;
-}
-.row-2{
-  margin-top: 100px;
-}
-.seo-section .rows-1{
-  margin-top: 400px;
-}
-.hero-container button{
-  font-size: 13px;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  padding:20px 20px 20px 20px;
-  border:2px solid white;
-  color: white;
-}
-#hero p{
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  word-spacing: 10px;
-}
-#hero h1 {
-  margin: -10px 0 40px 0;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 15px;
-  color: #fff;
-}
-#hero h3 {
-  color: #eee;
-  font-size: 23px;
-}
-}
-.service{
-  margin-top: -100px;
-}
-@media screen and (max-width: 770px){
-  .seo-section .rows-1{
-  margin-top: 800px;
-
-}
-
-.off-seo-page .cards{
-  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
-  margin-right: 0;
-  color:white;
-  padding: 20px 17px 20px 30px;
-  font-size: 14px;
-  border-radius:6px 6px 6px 6px;
-}
-
-.reviews h1{
-  font-size: 22px;
-  font-weight: bolder;
-}
-.reviews h2{
-  font-size: 20px;
-}
-.reviews p{
-  font-size: 17px;
-}
-.row-2{
-
-  margin-top: 0;
-}
-.row-1{
-  margin-top: 0;
-}
-.service{
-  margin-top: 40px;
-}
-.hero-container button{
-  font-size: 13px;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  padding:15px 15px 15px 15px;
-  border:2px solid white;
-  color: white;
-}
-.seo-section ul li h2{
-  font-size: 17px;
-}
-.seo-section h1{
-  font-size: 16px;
-}
-.seo-section .service h1{
-  font-size: 25px;
-}
-.card-3 {
-    display: block;
-  }
-  .card-3 .card-heading {
-    display: block;
-    width: 100%;
-    padding-top: 400px;
-    background-position: center center;
-  }
-  .card-3 .card-body {
-    display: block;
-    width: 100%;
-    padding: 37px 30px;
-    padding-bottom: 45px;
-  }
-  footer p i{
-  font-size: 18px;
-}
-footer p{
-  margin-bottom: 17px;
-}
-footer .mso{
-  font-family: Tahoma,sans-serif;
-  font-size: 40px;
-  /*font-weight: 900;*/
-}
-footer h1{
-  font-size: 23px;
-  /*margin-top: 20px;*/
-}
-footer .our-services{
-}
-.news-letter button{
-  font-size: 17px;
-}
-
-}
-@media screen and (max-width: 400px){
-.off-seo-page .btn-2{
-  margin-top: 5px;
- } 
-  }
-@media screen and (max-width: 580px){
-  .reviews .col-sm-1{
-  display: none;
- }
- .local-seo{
-  font-size: 22px;
- }
- .reviews .carousel-control-prev{
-    margin-left: 0;
-    margin-top: 35px;
-    color: grey;
-}
-.reviews .carousel-control-next{
-    margin-right: 0;
-    color: grey;
-    margin-top: 35px;
-}
-  }
-.service h1{
-  font-size: 35px;
-}
-
-
 .seo-package .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 1s;
@@ -1019,35 +707,19 @@ footer .our-services{
 }
 
 
-@media only screen and (max-width: 1240px) and (min-width: 992px)  {
-.container-fluid .justify-content-bet .card{
- width: 267px;  
-}
-}
-
-
-.seo-package h1, .seo-package small{
-  margin-left: 130px;
-}
-
-.carousel-control-prev{
-    margin-left: -140px;
-    margin-top: 35px;
-    color: white;
-}
-.carousel-control-next{
-    margin-right: -140px;
-    color: white;
-    margin-top: 35px;
-}
 
 
 
+
+
+
+
+
+
+/*####################---------Get Free Quote(Contact)---------####################*/
 
 .register{
-    /*background: -webkit-linear-gradient(left, #3931af, #00c6ff);*/
     background-image: linear-gradient(to right, #3931AF , #0F9FEA); 
-    /*margin-top: 3%;*/
     padding: 3%;
     width: 100%;
 }
@@ -1057,7 +729,6 @@ footer .our-services{
 }
 .register input{
   padding: 5%;
-  /*margin: 4%;*/
   margin-bottom: 4%;
 }
 .register-left input{
@@ -1100,3 +771,933 @@ footer .our-services{
     text-align: center;
     margin-top: 8%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+/*####################---------Reviews---------####################*/
+
+.reviews{
+  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
+  align-items: center;
+  justify-content: center;
+}
+.reviews p{
+  font-size: 20px;
+}
+.reviews h1{
+  font-size: 26px;
+  font-weight: bolder;
+}
+#myCarousel {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.carousel-control-prev{
+    margin-left: -140px;
+    margin-top: 35px;
+    color: white;
+}
+.carousel-control-next{
+    margin-right: -140px;
+    color: white;
+    margin-top: 35px;
+}
+.reviews .icons{
+  display: none;
+}
+.reviews .icons .carousel-control-prev-icon{
+  /*border:5px solid;*/
+}
+.carousel .carousel-indicators li {
+  margin-top: 120px;
+   width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/*####################---------Footer---------####################*/
+
+  footer{
+  /*background-image: linear-gradient(to right, #1f2985 , #165b93);*/
+  /*color: white;*/
+  align-items: center;
+  /*justify-content: center;*/
+  border-bottom: 2px solid  
+  color:  #1754D4;
+
+}
+
+footer ul li{
+  list-style: none;
+  padding: 10px 0 10px 0;
+  margin-left: -37px;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+footer ul li span,p i,.news-letter span{
+  color: #01c698;
+}
+footer p i{
+  font-size: 22px;
+}
+footer p{
+  margin-bottom: 20px;
+}
+footer .mso{
+  font-family: Tahoma,sans-serif;
+  font-size: 50px;
+}
+footer h1{
+  font-size: 30px;
+}
+footer .our-services{
+}
+.news-letter button{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====---START top BG image MQ----=====*/
+
+@media screen and (max-width: 1100px){
+  #hero {
+  height: 1050px;
+  background: url("/static/img/bgimg.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+    background-color: #F2F6FD;
+}
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 1660px){
+  .navbar .phone{
+    margin-left: 300px;
+    margin-top: -8px;
+    float: left;
+   padding: 2px 4px 2px 4px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1560px){
+  .navbar .phone{
+    margin-left: 200px;
+    margin-top: -8px;
+    float: left;
+   padding: 2px 4px 2px 4px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1460px){
+  .navbar .phone{
+    margin-left: 100px;
+    margin-top: -8px;
+    float: left;
+   padding: 2px 4px 2px 4px;
+    font-size: 14px;
+  }
+
+  #hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: -17%;
+  left: -3%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+}
+
+  /*=====---END top BG image MQ----=====*/
+
+
+
+
+
+
+
+ /*=====---START Signup page MQ----=====*/
+  .wrapper .card {
+  position: absolute;
+  right: 21%;
+  top: 32%;
+}
+
+.card-3 {
+  width: 40%;
+  display: table;
+
+}
+}
+@media screen and (max-width: 1340px){
+
+  .card-3 {
+  width: 49%;
+  display: table;
+
+}
+
+
+ /*=====---END Signup page MQ----=====*/
+
+
+
+
+
+ /*=====---START Premium MQ----=====*/
+   .seo-package .basic-body button{
+  background-image: linear-gradient(to right, #52f6dd , #0ad8f0);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 40px 10px 40px;
+  font-size: 14px;
+}
+.seo-package .col-md-6 .card:hover{
+  width: 130%;
+  height: 120%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top:0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 3;
+}
+ /*=====---START Premium MQ----=====*/
+
+
+
+
+
+ /*=====---START BG img TOP & Text MQ----=====*/
+
+
+.navbar .phone{
+    margin-left: 0;
+    margin-top: -8px;
+    float: left;
+   padding: 2px 4px 2px 4px;
+    font-size: 14px;
+  }
+  .phone button{
+  border-radius: 50px;
+  padding: 10px 17px 10px 17px;
+  font-size: 14px;
+  color: white;
+  margin-left: 0;
+}
+#hero h1 {
+  margin: -10px 0 0 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+#hero h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
+}
+ #hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: -17%;
+  left: -1%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+}
+}
+/*=====---END BG img TOP & Text MQ----=====*/
+
+
+
+
+
+
+/*=====---START service page MQ----=====*/
+@media screen and (max-width: 991px){
+      .seo-section .service{
+  margin-top: 10px;
+}
+ 
+  }
+  /*=====---END service page MQ----=====*/
+
+
+
+
+
+ /*=====---START BG img TOP & Text MQ----=====*/
+
+@media screen and (max-width: 1140px){
+
+  
+
+ /*=====---END BG img TOP & Text MQ----=====*/
+
+#hero h1 {
+  margin: -10px 0 0 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: #fff;
+}
+#hero h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 37px;
+}
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: -17%;
+  left: -4%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+}
+#hero p{
+        letter-spacing: 1px;
+}
+
+
+
+ /*=====---START shape MQ----=====*/
+.image-1{
+  display: none;
+}
+
+/*=====---END Shape MQ----=====*/
+
+
+
+
+
+/*=====---START Premium card Between  MQ----=====*/
+.container-fluid .justify-content-bet{
+  justify-content: space-around;
+}
+/*=====---END Premium card Between  MQ----=====*/
+
+
+/*=====---START Reviews  MQ----=====*/
+.reviews .carousel-control-prev{
+    margin-left: -100px;
+    margin-top: 35px;
+    color: white;
+}
+
+.reviews .carousel-control-next{
+    margin-right: -100px;
+    color: white;
+    margin-top: 35px;
+}
+
+/*=====---END Reviews  MQ----=====*/
+
+
+
+
+
+/*=====---STart Signup  MQ----=====*/
+.card-3 .card-heading h5{
+ position: absolute;
+ z-index: 1;
+ top: 18%;
+ left: 15px;
+ font-size:22px;
+ color: white;
+}
+.wrapper .card {
+  position: absolute;
+  left: 10%
+  top: 32%;
+}
+
+.card-3 {
+  width: 53%;
+  display: table;
+
+}
+/*=====---END Signup  MQ----=====*/
+
+
+
+
+/*=====---START SEO on off page  MQ----=====*/
+.off-seo-page small{
+  font-size: 17px;
+}
+.off-seo-page h1{
+  font-size: 25px;
+}
+.off-seo-page button{
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: bolder;
+  border-radius: 50px;
+  padding:10px 15px 10px 15px;
+  border:2px solid #3763bb;
+  color: #3763bb;
+}
+.off-seo-page button:hover{
+  color: white;
+  background-color: #3763bb;
+}
+.off-seo-page .cards{
+  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
+  margin-right: -15px;
+  color:white;
+  padding: 20px 17px 20px 30px;
+  font-size: 14px;
+  border-radius:6px 0 0 6px;
+}
+}
+
+/*=====---END SEO on off page  MQ----=====*/
+
+
+
+
+
+/*=====---START Reviews  MQ----=====*/
+@media screen and (max-width: 950px){
+  .reviews .carousel-control-prev{
+    margin-left: -70px;
+    margin-top: 35px;
+    color: white;
+}
+.reviews .carousel-control-next{
+    margin-right: -70px;
+    color: white;
+    margin-top: 35px;
+}
+/*=====---END Reviews  MQ----=====*/
+
+
+
+
+/*=====---START signup MQ----=====*/
+    .wrapper .card {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  left: 5%;
+  top: 97%;
+}
+.card-3{
+  width: 90%;
+  align-items: center;
+}
+.emailing .buttonIn button {
+        position: absolute;
+        top: 110%;
+        padding: 8px 15px 32px 15px;
+      }
+      .emailing .buttonIn input {
+        margin: 0px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        width: 100%;
+        outline: none;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid #CCDAF6;
+    }
+    .emailing .email-subscribe{
+  background-color: #F2F6FD;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 55px 0 115px 0;
+  border-radius: 9px;
+}
+/*=====---END signup MQ----=====*/
+
+
+
+
+
+/*=====---START Premium package MQ----=====*/
+.seo-package .container-fluid h1{
+  margin-left: 0;
+  font-size: 25px;
+}
+.seo-package .container-fluid small{
+  margin-left: 0;
+  font-size: 22px;
+}
+/*=====---END Premium package MQ----=====*/
+
+
+
+
+/*=====---START Top BG image text MQ----=====*/
+
+
+
+
+
+
+
+/*=====---START SEO Section MQ----=====*/
+
+.row-1 .crts{
+  margin-left: 0;
+}
+.row-1{
+  margin-top: 0;
+}
+.row-2{
+  margin-top: 100px;
+}
+.seo-section .rows-1{
+  margin-top: 265px;
+}
+.services{
+  margin-top: -50px;
+  background-color: #F2F6FD;
+  padding-top: 10px;
+}
+.seo-section .grow{
+  font-size: 35px;
+}
+.seo-section p{
+  font-size: 20px;
+  width: 100%;
+  float: center;
+  margin:auto;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+/*=====---END SEO Section MQ----=====*/
+
+
+
+
+
+
+
+/*=====---START Top BG image text MQ----=====*/
+
+.hero-container button{
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  padding:20px 20px 20px 20px;
+  border:2px solid white;
+  color: white;
+}
+}
+/*=====---END Top BG image text MQ----=====*/
+
+
+
+
+
+
+
+@media screen and (max-width: 770px){
+
+/*=====---START SEO OFF & ON MQ----=====*/
+
+.off-seo-page .cards{
+  background-image: linear-gradient(to right, #4f5dff , #28a7ff);
+  margin-right: 0;
+  color:white;
+  padding: 20px 17px 20px 30px;
+  font-size: 14px;
+  border-radius:6px 6px 6px 6px;
+}
+/*=====---END SEO OFF & ON MQ----=====*/
+
+
+
+
+/*=====---START Servive section MQ----=====*/
+
+.reviews h1{
+  font-size: 22px;
+  font-weight: bolder;
+}
+.reviews h2{
+  font-size: 20px;
+}
+.reviews p{
+  font-size: 17px;
+}
+.row-2{
+
+  margin-top: -10px;
+}
+.row-1{
+  margin-top: -100px;
+}
+.service{
+  margin-top: 40px;
+}
+.seo-section .grow{
+  font-size: 25px;
+}
+.seo-section p{
+  font-size: 16px;
+}
+/*=====---END Servive section MQ----=====*/
+
+
+
+
+
+
+/*=====---START Navbar contact btn----=====*/
+
+.hero-container button{
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  padding:15px 15px 15px 15px;
+  border:2px solid white;
+  color: white;
+}
+/*=====---END Navbar contact btn----=====*/
+
+
+
+
+
+/*=====---START SEO Section MQ-----=====*/
+
+ .seo-section .rows-1{
+  margin-top: 800px;
+}
+.seo-section ul li h2{
+  font-size: 17px;
+}
+.seo-section h1{
+  font-size: 16px;
+}
+.seo-section .service h1{
+  font-size: 25px;
+}
+.services{
+  margin-top: -140px;
+  background-color: #F2F6FD;
+  padding-top: 10px;
+}
+/*=====---END SEO Section MQ-----=====*/
+
+
+
+
+/*=====---START Signup Page MQ-----=====*/
+.card-3 {
+    display: block;
+  }
+  .card-3 .card-heading {
+    display: block;
+    width: 100%;
+    padding-top: 400px;
+    background-position: center center;
+  }
+  .card-3 .card-body {
+    display: block;
+    width: 100%;
+    padding: 37px 30px;
+    padding-bottom: 45px;
+  }
+  /*=====---END Signup Page MQ-----=====*/
+
+
+
+
+
+  /*=====---START Footer MQ-----=====*/
+
+  footer p i{
+  font-size: 18px;
+}
+footer p{
+  margin-bottom: 17px;
+}
+footer .mso{
+  font-family: Tahoma,sans-serif;
+  font-size: 40px;
+}
+footer h1{
+  font-size: 23px;
+}
+footer .our-services{
+}
+.news-letter button{
+  font-size: 17px;
+}
+}
+/*=====---END Footer MQ-----=====*/
+
+
+
+
+
+
+/*=====---START Get Free Q btn MQ-----=====*/
+
+@media screen and (max-width: 283px){
+.off-seo-page .btn-2{
+  margin-top: 5px;
+ } 
+  }
+/*=====---END Get Free Q btn MQ-----=====*/
+
+
+
+
+
+
+
+
+  /*=====---START Reviews MQ-----=====*/
+
+@media screen and (max-width: 580px){
+  .reviews .col-sm-1{
+  display: none;
+ }
+ .reviews .carousel-control-prev{
+    margin-left: 0;
+    margin-top: 35px;
+    color: grey;
+}
+.reviews .carousel-control-next{
+    margin-right: 0;
+    color: grey;
+    margin-top: 35px;
+}
+.reviews .icons span{
+  color: red;
+}
+.reviews .icons{
+  display: block;
+  /*color: red;*/
+}
+.reviews .icons-arrow{
+  display: none;
+}
+.row-2{
+
+  margin-top: -20px;
+}
+.row-1{
+  margin-top: -200px;
+}
+/*=====---END Reviews MQ-----=====*/
+
+/*=====---START Service MQ-----=====*/
+.services{
+  margin-top: -180px;
+  background-color: #F2F6FD;
+  padding-top: 10px;
+}
+/*=====---END Reviews MQ-----=====*/
+  }
+
+
+
+
+
+
+
+
+/*=====---START Premium SEO Package MQ-----=====*/
+
+@media only screen and (max-width: 1240px) and (min-width: 992px)  {
+.container-fluid .justify-content-bet .card{
+ width: 267px;  
+}
+}
+
+/*======----END Premium SEO Package MQ-----======*/
+
+
+
+
+
+/*======----Start Email section-----======*/
+.email-subscribe{
+  background-color: #F2F6FD;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 55px 0 55px 0;
+  border-radius: 9px;
+}
+
+.email-subscribe h3{
+  font-size: 20px;
+  color: #1754D4;
+  font-weight: bold;
+
+}
+.buttonIn {
+        /*width: 300px;*/
+        position: relative;
+    }
+      
+    .buttonIn input:focus{
+      border: 2px solid #0046D1;
+    }
+    .buttonIn input {
+        margin: 0px;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        width: 100%;
+        outline: none;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid #CCDAF6;
+    }
+      
+   .buttonIn button {
+        position: absolute;
+        top: 10%;
+        border-radius: 5px;
+        right: 0px;
+        z-index: 2;
+        border: none;
+        /*top: 2px;*/
+        height: 30px;
+        cursor: pointer;
+        color: white;
+        font-size: 17px;
+        margin-right: 8px;
+        padding: 13px 29px 40px 29px;
+        letter-spacing: 1px;
+        background-color: #1754D4;
+        transform: translateX(2px);
+    }
+
+    /*======----END Email section-----======*/
+
+   @media only screen and (max-width: 1500px){
+
+      .seo-package .basic-header .price-value-premium{
+    color:#35ae61;
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    padding: 21px 0;
+    border: 5px solid #35ae61;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    font-weight: bold;
+    right: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.seo-package .basic-header .price-value-standard{
+    color:#35ae61;
+    background: #fff;
+    width: 77px;
+    height: 77px;
+    padding: 21px 0;
+    border: 5px solid #35ae61;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -45px;
+    font-weight: bold;
+    right: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.seo-package .basic-header .price-value-basic{
+    color:#0ad8f0;
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    padding: 21px 0;
+    border: 5px solid #0ad8f0;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    right: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    }
+
+
+    @media   screen and (max-width: 991px){
+      .seo-package .col-md-6 .card:hover{
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top:0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 3;
+}
+    }

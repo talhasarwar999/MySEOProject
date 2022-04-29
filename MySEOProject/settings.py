@@ -103,6 +103,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS =True
+DEFAULT_FROM_EMAIL = 'talhasarwar289@gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'talhasarwar289@gmail.com'
+EMAIL_HOST_PASSWORD = 'Ali206198912'
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -123,6 +130,7 @@ MESSAGE_TAGS = {
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 # Default primary key field type
