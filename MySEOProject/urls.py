@@ -23,4 +23,4 @@ urlpatterns = [
     path('seoadmin/', admin.site.urls),
     path('',include('seoapp.urls')),
 ]
-# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -4,6 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+$(document).ready(function(){
+        $("#seo-report").modal('show');
+$('.closemodal').click(function() {
+    $('#certified').modal('hide');
+});
+    });
 (function() {
   "use strict";
 
@@ -171,9 +177,7 @@
   /**
    * Initiate glightbox 
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+
 
   /**
    * Testimonials slider

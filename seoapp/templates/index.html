@@ -9,38 +9,40 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		  <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 	<link rel="canonical" href="https://tkckitchens.co.uk/">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="/static/css/style.css">
-		
 	</head>
 	<body>
-<header id="header" class="fixed-top">
+<header id="header" class="fixed-top header">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <nav id="navbar" class="navbar">
       	<img src="/static/img/logo.png" class="ml-4 mr-5" height="38px" width="100px" alt="">
-        <ul class="text-uppercase">
+        <ul class="">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#packages">packages</a></li>
+          <li><a class="nav-link scrollto" href="#packages">Packages</a></li>
           <li><a class="nav-link scrollto " href="#reviews">Reviews</a></li>
-          <li><a class="nav-link scrollto">company</a></li>
+          <li><a class="nav-link scrollto">Company</a></li>
           
-          <li><a class="nav-link scrollto">markets</a></li>
-          <li>
-        <div class="phone text-uppercase">
-         		<strong class="">phone: 021333211234</strong>
-         		<button class="btn btn-primary text-uppercase"><b>contact us</b></button>
-        </div>
-        </li>
+          <li><a class="nav-link scrollto">Markets</a></li>
+        <li class="nav-item ml-3 mt-n3">
+        <span class="fa-ph py-2  px-3"><i class="fa-solid fa-phone text-white fa-1x mr-2"></i><span>021333211234</span></span>
+      </li>
       </ul>
+
       
      
          	
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle font-weight-bold"></i>
       </nav>
-
+<div class="phone text-uppercase ml-0 mr-5">
+         		<strong class="">phone: 021333211234</strong>
+         		<button class="btn btn-primary text-uppercase"><b>contact us</b></button>
+        </div>
     </div>
   </header>	
   {% for message in messages  %}            
@@ -50,21 +52,18 @@
             </button>
           </div>
           {% endfor %}
- 
-
-  <section id="hero" style="">
+  <section id="hero">
      <div class="container hero-container" data-aos="fade-up" data-aos-delay="150">
-      <h1 class="text-white">Your First Step to </h1><br>
-      <h3 class="text-uppercase">seo success</h3>
+      <h1 class="seo-local">SEO for your local Business</h1>
       <p class="text-uppercase text-white">Grow your business</p>
       <div class="d-flex mt-5">
-        <button class="btn text-uppercase" href="#C4"><a href="#C4" style="text-decoration: none;color: white;">get a free quote</a></button>
+        <button class="btn text-uppercase" href="#free-quote"><a href="#free-quote" class="free-quotes">get a free quote</a></button>
       </div>
     </div> 
   </section>
 
             <div class="wrapper wrapper--w780 mb-3">
-            <div class="card card-3 border-0" style="background-color: #F2F6FD;">
+            <div class="card card-3 border-0">
                 <div class="card-heading">
                 	<img src="/static/img/logo.png" alt="" height="28px" width="90px">
                 	<h5>Sign Up to Get Free Consultancy!</h5>
@@ -81,10 +80,10 @@
                             
                         </div>
                         <div class="input-group">
-                            <input class="form-control" type="number" placeholder="phone" name="phone" required="" required="">
+                            <input class="form-control" type="number" placeholder="Phone" name="phone" required="" required="">
                         </div>
                         <div class="input-group">
-                           <input class="form-control" type="url" placeholder="Webite" name="website" minlength="15" maxlength="500">
+                           <input class="form-control" type="url" placeholder="Website" name="website" minlength="15" maxlength="500">
                         </div>
                         <div class="input-group">
                             <textarea class="form-control" placeholder="Your Message" name="message" ></textarea>
@@ -97,48 +96,50 @@
             </div>
           </div>
 
- <section id="services" class="services" style="">
+ <section id="services" class="services">
 			<div class="container seo-section">
 				<div class="row rows-1 justify-content-around">			
 					<div class="col-md-12">
-					<h1 class="text-center text-dark grow"><strong>Grow Your Business</strong></h1>
+					<h2 class="text-center text-dark grow"><strong>Grow Your Business</strong></h2>
 					<h3 class="text-uppercase text-center text-muted mt-2 mb-4">Our SERVICES</h3>
-						<p class="text-muted text-center">At our company, we offer a variety of services that focus on the use of data. We have a team of experts who utilize proven SEO strategies and data-focused methodologies to get your website the visibility it needs online. In addition, our transparent reporting will help you understand the progress your business is making and how your website is performing. Contact us today to learn more about our services!</p>
+						<p class="text-muted text-center">We offer a variety of services that focus on the use of data. We have a team of experts who utilize proven SEO strategies and data-focused methodologies to get your website the visibility it needs online. In addition, our transparent reporting will help you understand the progress your business is making and how your website is performing. <br> <strong>Contact us today to learn more about our services!</strong></p>
+            <div class="text-center mt-n4 mb-4 contact"><a href="#free-quote" class="btn btn-primary px-5 py-3" >Contact Us</a>
+</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 text-center" style="">
+				<div class="col-lg-4 col-md-4 col-sm-6 text-center">
 					<div class="card border-0 pt-5 pb-5 mb-3 px-4  crts">
 							<img src="/static/img/seo.png" class="mb-4" width="50px" height="50px" alt="">
-							<h1 class="mb-4"><strong>PROVEN SEO STRATEGIES</strong></h1>
+							<h2 class="mb-4"><strong>PROVEN SEO STRATEGIES</strong></h2>
 							<small class="text-muted mb-">
-								Our proven set of SEO strategies have gotten us to the very top with over 250 satisfied clients around the
+								Our proven set of SEO strategies have gotten us to the very top with clients around the
 world.
 							</small>
 					</div>
 					<ul class="text-left">
-					<li><h2><strong><span><i class="fa-solid fa-circle-check"></i></span>Proven SEO Strategies</strong></h2></li>
+					<li><h3><strong><span><i class="fa-solid fa-circle-check"></i></span>Proven SEO Strategies</strong></h3></li>
 					
 					</ul>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 text-center">
 					<div class="card border-0 py-5 	px-4 mb-3">
 							<img src="/static/img/report.png" class="mb-4" width="50px" height="50px" alt="">
-							<h1 class="mb-3"><strong>MINIMALLY TRANSPARENT
-REPORTING</strong></h1>
+							<h2 class="mb-3"><strong>TRANSPARENT
+REPORTING</strong></h2>
 							<small class="text-muted mb-n3">
 								We like to keep our clients in the loop
-										which is mainly why we provide minimal and transparent data reports
+										which is mainly why we provide transparent data reports
 										each month to our clients.
 							</small>
 					</div>
 					<ul class="text-left">
 			
-					<li><h2><strong><span><i class="fa-solid fa-circle-check"></i></span>Minimally Transparent Reporting</strong></h2></li>
+					<li><h3><strong><span><i class="fa-solid fa-circle-check"></i></span>Minimally Transparent Reporting</strong></h3></li>
 					</ul>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 text-center">
 					<div class="card border-0 py-5 px-4 mb-3">
 							<img src="/static/img/data.png" class="mb-4" width="50px" height="50px" alt="">
-							<h1 class="mb-3"><strong>DATA FOCUESD METHODOLOGIES</strong></h1>
+							<h2 class="mb-3"><strong>DATA FOCUESD METHODOLOGIES</strong></h2>
 							<small class="text-muted mb-n3">
 								We love Data! Most of our methodologies are driven by data and
 								are focused on getting you results that deeply matter for your business.
@@ -146,14 +147,147 @@ REPORTING</strong></h1>
 					</div>
 					<ul class="text-left">
 					
-					<li><h2><strong><span><i class="fa-solid fa-circle-check"></i></span>Data Focused Methodologies</strong></h2></li>
+					<li><h3><strong><span><i class="fa-solid fa-circle-check"></i></span>Data Focused Methodologies</strong></h3></li>
 					
 					</ul>
 				</div>
 			</div>
 			</div>
-				
 		</section>
+
+
+
+	<section class="seo-package mb-5" id="packages">
+			<div class="container-fluid">
+				<div class="m-b">
+					<h2 class="text-center mt-5"><strong>Local SEO Package</strong></h2>
+				</div>
+				<div class="row justify-content-bet">
+					<div class="col-lg-1 image-1">
+						<img src="/static/img/Shape 7.png" width="290px" height="450px" class="ml-n3 m-t">
+					</div>
+					<div class="col-lg-1 image-1">
+						<img src="/static/img/Shape 6.png" class="h-t">
+					</div>
+				</div>
+			</div>
+		</section>
+
+<section class="seo-package mb-5 margin-tops" id="packages">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 col-sm-12 mb-2">
+
+
+						<div class="card text-center border-0 mb-5">
+  <div class="card-header basic-header text-center text-white border-0 py-4">
+    <p class="mb-0">Basic</p>
+    <h3 class="mt-0 mb-1">Local Essentials</h3>
+    <div class="price-value-basic">
+    	<h4 class="pb-0 font-weight-bold">&#163; 250</h4>
+    </div>
+  </div>
+
+  <div class="card-body  basic-body">
+    <ul class="text-left">
+    	<li class="mt-4">Primary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Single Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website On Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Keywords Research and report<span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Duplicate Local Content Cleanup <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Google Maps optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    <li>Google Business optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>5 High DA Content Based Backlinks*<span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Internal Links optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    </ul>
+  </div>
+  <div class="pricingTable-signup ">
+                        <a href="#">Buy Now</a>
+                    </div>
+</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 col-sm-12 g-0 mb-2">
+						<div class="card text-center border-0 standard-card">
+  <div class="card-header basic-header standard-header text-center text-white pb-4 border-0">
+  	<div>
+  <p class="recomend text-uppercase py-1 "><span><i class="fa-solid fa-star"></i></span> Recomended</p></div>
+     <p class="mb-0">Standard</p>
+    <h3 class="mt-0 mb-1">Local Advanced</h3>
+    <div class="price-value-standardd">
+    	<h4 class="pb-0 font-weight-bold">&#163; 499</h4>
+    </div></div>
+
+  <div class="card-body basic-body  standard-body" >
+    <ul class="text-left mt-4 mb-5">
+    	<li>Primary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Single Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website On Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website Off Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Keywords Research and report <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>3 Keywords optimizations and ranking <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Duplicate Local Content Cleanup <span><i class="fa-solid fa-check"></i></span></li>
+     <li>Google Business optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Google Maps optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Content Marketing <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Content Creation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website Graphics related optimization <span><i class="fa-solid fa-check"></i></span></li>
+      <li>7 High DA Content Based Backlinks* <span><i class="fa-solid fa-check"></i></span></li>
+    	<li class="">Internal Links optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    </ul>
+   
+  </div>
+  <div class="pricingTable-signup price-value-basi">
+                        <a href="#">Buy Now</a>
+                    </div>
+</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-sm-12 mb-2 ">
+						<div class="card text-center border-0 mb-5">
+							<div class="card-header basic-header text-center text-white border-0 py-4 basic-header-css">
+    <p class="mb-0">Premium</p>
+    <h3 class="mt-0 mb-1">Local Powerhosue</h3>
+    <div class="price-value-premium">
+    	<h4 class="pb-0 font-weight-bold">&#163; 750</h4>
+    </div>
+  </div>
+
+
+
+						
+  
+  <div class="card-body  basic-body">
+    <ul class="text-left mt-4">
+    	<li>Primary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Multi Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website On Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website Off Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Keywords Research and report <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>7 Keywords optimizations and ranking <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Duplicate Local Content Cleanup <span><i class="fa-solid fa-check"></i></span></li>
+      <li>Google Business optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Google Maps optimisation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Content Marketing <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Content Creation <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Website Graphics related optimization <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>10 High DA Content Based Backlinks*<span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Internal Links optimisation <span><i class="fa-solid fa-check"></i></span></li>
+      <li>Bi-Weekly reports <span><i class="fa-solid fa-check"></i></span></li>
+    	<li>Access to scanning tools <span><i class="fa-solid fa-check"></i></span></li>
+    </ul>
+    
+  </div>
+<div class="pricingTable-signup-1">
+                        <a href="#">Buy Now</a>
+                    </div>
+</div>
+					</div>
+</div>
+</div>
+</section>
+
+
+
 
 		
 
@@ -165,10 +299,10 @@ REPORTING</strong></h1>
 					</div>
 					<div class="col-lg-5 col-md-5">
 						<small class="text-muted">ON PAGE SEO</small>
-						<h1 class="mt-3 mb-5"><strong>Taking Huge Leaps In On-Page optimisation and Digital Marketing Strategy.</strong></h1>
+						<h2 class="mt-3 mb-5"><strong>Taking Huge Leaps In On-Page optimisation and Digital Marketing Strategy.</strong></h2>
 						<div>
-							<button class="btn text-uppercase" href="#C4"><a href="#C4" style="text-decoration: none;color: #3763bb;">get a free quote</a></button>
-							<button class="btn btn-2 text-uppercase">Chat Now</button>
+							<button class="btn text-uppercase" href="#free-quote" class="free-quotes">get a free quote</button>
+						
 
 						</div>
 					</div>
@@ -193,10 +327,10 @@ REPORTING</strong></h1>
 				<div class="row justify-content-end">
 					<div class="col-lg-5 col-md-5 col-sm-12 ">
 						<small class="text-muted">OFF PAGE SEO</small>
-						<h1 class="mt-3 mb-5"><strong>Creating a Unique Off-page Optimised Infrastructure For Your Business Over The Web.</strong></h1>
+						<h2 class="mt-3 mb-5"><strong>Creating a Unique Off-page Optimised Infrastructure For Your Business Over The Web.</strong></h2>
 						<div>
-							<button class="btn text-uppercase" href="#C4"><a href="#C4" style="text-decoration: none;color: #3763bb;">get a free quote</a></button>
-							<button class="btn btn-2 text-uppercase">Chat Now</button>
+							<button class="btn text-uppercase" href="#free-quote" class="free-quotes">get a free quote</button>
+			
 
 						</div>
 					</div>
@@ -215,130 +349,645 @@ REPORTING</strong></h1>
 				</div>
 			</div>
 		</section>
-		<section class="seo-package mb-5" id="packages">
-			<div class="container-fluid">
-				<div class="" style="margin-bottom: 110px;">
-				<small class="text-muted" style="font-size: 18px;">PACKAGES</small>
-					<h1><strong>Local SEO Package</strong></h1>
-				</div>
-				<div class="row justify-content-bet">
-					<div class="col-lg-1 image-1">
-						<img src="/static/img/Shape 7.png" width="290px" height="450px" class="ml-n3" style="margin-top: -100px;">
-					</div>
-
-					
-           <div class="col-md-6 col-lg-3 col-sm-12 mb-2">
 
 
-						<div class="card text-center border-0 mb-5">
-  <div class="card-header basic-header text-center text-white border-0 py-4">
-    <p class="mb-0">Basic</p>
-    <h3 class="mt-0 mb-1">Local Essentials</h3>
-    <div class="price-value-basic">
-    	<h4 class="pb-0 font-weight-bold">€ 250</h4>
+		      <!--google certified-->
+        <section class="googlecert">
+      <div class="container google-verfied text-center">
+        <img src="/static/img/googlecertified.png" width="35%" height="15%" alt="google certified" loading="lazy">
+        <p id="Web-Develop"></p>
+        <p class="certified">Certified</p>
+         <p class="text-right text-danger about-certified" data-toggle="modal" data-target="#certified"><b><button class="btn btn-danger px-4 py-2">About Google Certified</button></b></p> 
+         <p class="text-right text-danger about" data-toggle="modal" data-target="#certified"><b><button class="btn btn-danger px-4 py-2">About</button></b></p>   
+    <div class="modal fade" id="certified" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                          <h3
+                          class="modal-title service-modal col-md-12"
+                          id="exampleModalLabel">
+                    
+                  
+                 <div class="row">
+                 	<div class="col-md-12 col-lg-6">
+                 		<!-- <img src="/static/img/Ellipseleft.png" alt="" class="img-fluid"> -->
+                 		 <div class="text-certified px-2 text-white mt-n5"><h2 class=" ml-2">We are <b>google</b> Certified</h2>
+                
+                 
+                  <ul class="list-group text-muted">
+                    <li class="list-group-item font-weight-bold list-group-item-primary text-dark mt-2">Our Certifications</li>
+  <li class="list-group-item">Google Ads Search</li>
+  <li class="list-group-item">Google Ads Display</li>
+  <li class="list-group-item">Google Ads Video</li>
+  <li class="list-group-item">Shopping Ads</li>
+  <li class="list-group-item">Google Ads Apps</li>
+  <li class="list-group-item">Google Analytics</li>
+  <li class="list-group-item">Youtube Ads</li>
+  <li class="list-group-item">Google Cloud</li>
+
+</ul>
+                </div>
+                 	</div>
+                 	<div class="col-md-12 col-lg-6">
+                 		<img src="/static/img/Googlecertifiedbackground.png" alt="" class="img-fluid">
+                 	</div>
+                 </div>
+
+
+                   <div class="row row-design mt-4 mb-5">
+                      <div class="col-md-1 col-sm-1 col-1"></div>
+                      <div class="col-md-5 col-sm-5 col-5 mb-5 mt-3"><img src="/static/img/googleadslogo.png" alt="Google Ads" width="100% " loading="lazy" > </div>
+                      <div class="col-md-5 col-sm-5 col-5 mb-5 mt-3"><img src="/static/img/youtubeadvertisinglogo.png" alt="Youtube Ads" width="100% " loading="lazy" > </div>
+                      <div class="col-md-1 col-sm-1"></div>
+                      <div class="col-md-1 col-sm-1 col-1"></div>
+                      <div class="col-md-5 col-sm-5 col-5 mb-3"><img src="/static/img/googleshoppinglogo.png" alt="Google Shopping" width="100% " loading="lazy" > </div>
+                      <div class="col-md-5 col-sm-5 col-5 mb-3"><img src="/static/img/googlecloudlogo.png" alt="Google Cloud" width="100% " loading="lazy" > </div>
+                      
+                    </div>
+                    <h3 class="certified-h4">We know what Google wants and we know how to do it.</h3>
+                    <div class="row text-center">
+                      <div class="col-sm-12 ">
+                        <a href="#free-quote" class="btn btn-primary mt-4 py-2 px-4 closemodal">Contact Us</a></div>
+                    </div>
+                  </div></div></div></div></div>
+
+
+
+</section>
+
+
+    <div class="container seo-audit">
+      <div class="row justify-content-center rows">
+        <div class="col-md-10 col-sm-12">
+    <h2 class="mb-4 text-center font-weight-bold h1-main mt-5">Free Website SEO Analysis Tool & Audit Report</h2>
+    <h3 class="text-center h2-main">Find all your SEO errors - Analyze your website</h3>
+    <div class="row justify-content-center">
+    <div class="col-md-8 col-sm-12">
+    <p class="text-muted text-center my-5">Get list of errors that are stopping your site from achieving the top Google rankings spot.
+Our tool scans any web page for technical errors and SEO issues that can have a negative impact on search engine rankings.</p>
+</div></div>
+<div class="row justify-content-end">
+<div class="col-md-10 col-sm-12">
+    <form action="{% url 'index'%}" method="POST" class="form-url mb-5">
+      {% csrf_token %}
+      <input type="submit" class="submit btn btn-warning py-2 px-3 font-weight-bold text-white" value="AUDIT" data-toggle="modal" data-target="#seo-report">
+      <div class="input-url">
+      <input type="url" class="form-control form-control-lg py-4" placeholder="Example.com" name="url" required="">
+    </div>
+    </form>
+</div></div>
+  </div></div>  
+{% if url %}
+
+<div class="modal hide fade" id="seo-report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <nav class="navbar py-4 pl-5 mb-5">
+      <a href="/" class="text-dark font-weight-bold ">
+      <img src="/static/img/se.png" alt="SEO-Analyzer" width="60px" height="60px"> SEO Analyzer</a>
+    </nav>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container bg-white border border-lg">
+      <div class="row justify-content-center rows mt-4">
+        <div class="col-md-11">
+          {% if raise_error %}
+          <h2 class="text-center">{{raise_error}}</h2>
+          {% endif %}
+          {% if url %}
+        <h6 class="title font-weight">Meta Title</h6>
+        {% if meta_title %}
+        {% if meta_title|length > 80 or meta_title|length < 20%}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has a meta title with recommended character length of {{meta_title|length}}.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        <p class="text-muted">The ideal length for the meta title is 50–60 characters. Google starts to cut off the title tag after 50-60 characters.</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has a meta title with recommended character length of {{meta_title|length}}.</p><span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% endif %}
+        <p class="text-muted">{{meta_title}}</p>
+        <p class="text-muted">Length: {{meta_title|length}}</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main main-p">YWeb Page has not meta title</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Meta Description</h6>
+        {% if meta_tag_content %}
+        {% if meta_tag_content|length > 180 or meta_tag_content|length < 40%}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has a meta description with recommended character length of {{meta_tag_content|length}}.
+        </p><span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        <p class="text-muted">Meta descriptions can technically be any length, but Google generally truncates snippets to ~155-160 characters.</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has a meta description with recommended character length of {{meta_tag_content|length}}.</p><span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% endif %}
+        <p class="text-muted">{{meta_tag_content}}</p>
+        <p class="text-muted">Length: {{meta_tag_content|length}}</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Your page has not meta description</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Images Alt Attributes</h6>
+        {% if total_img %}
+        {% if without_alt_tag|length > 0 %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has {{total_img|length}} images</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>  
+        {% if without_alt_tag %}
+        <p class="text-muted">Alt tag is missing for {{without_alt_tag|length}} images.</p>
+        {% endif %}
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has {{total_img|length}} images</p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        <p class="text-muted">Alt tag is missing for {{without_alt_tag|length}} images.</p>
+        {% endif %}
+        <p class="text-muted">Total Images: {{total_img|length}}</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Your page have no images</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+          {% if url %}
+           <h6 class="title font-weight mt-5">Headings Used On the Page</h6>
+           {% if h1_tag|length > 1 %}
+           <div class="tags">
+            <p class="text-muted main-p">Web Page has more than 1(One) H1 heading. It is recommended to use one H1 heading.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has optimal number of headings on your page</p><span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% endif %}
+
+        <table class="table table-striped table-strip" >
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">First</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">H1</th>
+      <td>{{h1_tag|length}}</td>
+    </tr>
+    <tr>
+      <th scope="row">H2</th>
+      <td>{{h2_tag|length}}</td>
+    </tr>
+    <tr>
+      <th scope="row">H3</th>
+      <td>{{h3_tag|length}}</td>
+    </tr>
+    <tr>
+      <th scope="row">H4</th>
+      <td>{{h4_tag|length}}</td>
+    </tr>
+    <tr>
+      <th scope="row">H5</th>
+      <td>{{h5_tag|length}}</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">H6</th>
+      <td>{{h6_tag|length}}</td>
+    </tr>
+  </tbody>
+</table>
+{% endif %}
+
+
+{% if url %}
+        <h6 class="title font-weight mt-5">Amount of Content</h6>
+         {% if words_length > 1000 %}
+         <div class="tags">
+        <p class="text-muted main-p">Your page has not good level of textual content. Maximum words per page 600 to 700 to assist in it's ranking potential</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Your page has good level of textual content which will assist in it's ranking potential</p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% endif %}
+        <p class="text-muted"> Word Count: {{words_length}}</p>
+        {% endif %}
+
+
+              {% if url %}
+           <h6 class="title font-weight mt-5">Top 10 frequently appearing Keywords on the Web Page</h6>
+           
+        <p class="text-muted main-p">Top ten most frequent single keywords</p>
+        
+
+        <table class="table table-striped table-strip" >
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">Words</th>
+      <th scope="col">Number of Times Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for word in top_frequent_words %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{word.0}}</td>
+      <td>{{word.1}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+
+
+ {% if url %}
+           <h6 class="title font-weight mt-5">Top 10 Two Keywords appearing Together</h6>
+           
+        <p class="text-muted main-p">Top 10 Two Keywords frequently appearing</p>
+        
+
+        <table class="table table-striped table-strip" >
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">Words</th>
+      <th scope="col">Number of Times Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for word in top_two_togather_words %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{word.0}}</td>
+      <td>{{word.1}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+
+{% if url %}
+           <h6 class="title font-weight mt-5">Top 10 Three Words Long tail keywords appearing together</h6>
+           
+        <p class="text-muted main-p">Top 10 Three word long tail frequently used keywords</p>
+        
+
+        <table class="table table-striped table-strip" >
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">Words</th>
+      <th scope="col">Number of Times Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for word in top_three_togather_words %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{word.0}}</td>
+      <td>{{word.1}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+
+{% if url %}
+        <h6 class="title font-weight mt-5">Noindex and Nofollow Tag Test</h6>
+         {% if tag_exists == "nothing" %}
+         <div class="tags">
+        <p class="text-muted main-p">Web Page is not using “noindex” and “nofollow” tags which prevents indexing.
+        </p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% elif tag_exists == "both" %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page is using both “noindex” and “nofollow” tags which prevents indexing.</p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {% elif tag_exists == "noindex" %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page is using “noindex” tag which prevents indexing.</p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+         {% elif tag_exists == "nofollow" %}
+         <div class="tags">
+          <p class="text-muted main-p">Web Page is using “nofollow” tag which prevents indexing.</p>
+        <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+      </div>
+        {%else%}
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Favicon</h6>
+         {% if has_favicon == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Web Page has Favicon. It is recommended to have Favicon for the website.</p>
+         <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+       </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page has not Favicon. It is recommended to have Favicon for the website.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+         {% if url %}
+        <h6 class="title font-weight mt-5">SSL Verifiction Enabled</h6>
+         {% if ssl_enabled == 200 %}
+         <div class="tags">
+        <p class="text-muted main-p">Website has SSL enabled.</p>
+         <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+       </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Website has not SSL enabled.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">HTTPs Redirect</h6>
+         {% if ssl_enabled == 200 %}
+         <div class="tags">
+        <p class="text-muted main-p">Website successfully redirects to HTTPs( SSL secure) version.</p>
+         <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+       </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Website does not redirect to HTTPs( SSL secure) version.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Email Privacy</h6>
+         {% if emails %}
+         <div class="tags">
+        <p class="text-muted main-p">Email addresses have been found in plain text.</p>
+         <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+</div>
+          <table class="table table-striped table-strip" >
+  <thead>
+    <tr>
+      <th scope="col">Sr No.</th>
+      <th scope="col">Emails</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for word in emails %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{word}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Email addresses have not been found in plain text.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Inline Style</h6>
+          {% if inlinestyle_used %}
+          <div class="tags">
+        <p class="text-muted main-p ">Website has used inline styles..</p>
+         <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+         </div>
+          <p class="text-muted main-p">You have used {{inlinestyle_used}} times inline style on your website.</p>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Inline Style is not used on your website.</p>
+        
+         <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+       </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Facebook Connected</h6>
+          {% if facebook_link == True %}
+          <div class="tags">
+        <p class="text-muted main-p">Associated Facebook Page Found on Web Page.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">No Associated Facebook Page Found on Web Page.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Twitter Connected</h6>
+          {% if twitter_link == True %}
+          <div class="tags">
+        <p class="text-muted main-p">Associated Twitter Page Found on your Web Page.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">No Associated Twitter Page Found on your Web Page.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Instagram Connected</h6>
+         {% if instagram_link == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Associated Instagram Page Found on Web Page.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">No Associated Instagram Page Found on Web Page.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Linkedin Connected</h6>
+         {% if linkedin_link == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Associated Linkedin Page Found on Web Page.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">No Associated Linkedin Page Found on Web Page.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>  
+        {% endif %}
+        {% endif %}
+
+
+
+         {% if url %}
+        <h6 class="title font-weight mt-5">Twitter Cards</h6>
+         {% if twitter_cards == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Web Page is using Twitter Cards.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page is not using Twitter Cards.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if url %}
+        <h6 class="title font-weight mt-5">Open Graph Tag</h6>
+         {% if open_graph == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Web Page is using Open Graph Tags.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Web Page is not using Open Graph Tags..</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+        {% if url %}
+        
+        <h6 class="title font-weight mt-5">Schema.org Structured Data</h6>
+         {% if schema_used %}
+        <div class="tags">
+        <p class="text-muted main-p">We have detected any usage of schema.org on web page</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+        </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">We have not detected any usage of schema.org on web page</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      
+      </div>
+        {% endif %}
+        {% endif %}
+        
+
+
+
+
+          {% if url %}
+        <h6 class="title font-weight mt-5">Exists Robot File</h6>
+         {% if exists_robot_file == True %}
+         <div class="tags">
+        <p class="text-muted main-p">Website appears to have a robot.txt file.</p>
+          <span><i class="fa-solid fa-check text-success fa-3x"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Website does not appear to have a robot.txt file.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+
+
+
+
+           {% if url %}
+        <h6 class="title font-weight mt-5">Exists XML File</h6>
+         {% if exists_xml_file == True %}
+         <div class="tags">
+        <p class="text-muted main-p">YWebsite appears to have a sitemap.xml file.</p>
+          <span><i class="fa-solid fa-check text-success"></i></span>
+         </div>
+        {% else %}
+        <div class="tags">
+        <p class="text-muted main-p">Website does not appear to have a sitemap.xml file.</p>
+        <span><i class="fa-solid fa-xmark text-danger fa-3x"></i></span>
+      </div>
+        {% endif %}
+        {% endif %}
+</div></div></div></div>
+{% endif %}
+      </div>
     </div>
   </div>
-
-  <div class="card-body  basic-body">
-    <ul class="text-left">
-    	<li class="mt-4">TPrimary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Single Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Website On Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Keywords <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Duplicate Local Content Cleanup <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Google Maps optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>High DA Content Based Backlinks <span><i class="fa-solid fa-check"></i></span></li>
-    	<li style="border-bottom: none;">Internal Links optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    </ul>
-  </div>
-  <div class="pricingTable-signup ">
-                        <a href="#">Buy Now</a>
-                    </div>
 </div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 col-sm-12 g-0 mb-2">
-						<div class="card text-center border-0 standard-card" style="border-radius: 120px 0;">
-  <div class="card-header basic-header standard-header text-center text-white pb-4 border-0">
-  	<div>
-  <p class="recomend text-uppercase py-1 "><span><i class="fa-solid fa-star" style="color: #6458ee;"></i></span> Recomended</p></div>
-     <p class="mb-0">Standard</p>
-    <h3 class="mt-0 mb-1">Local Advanced</h3>
-    <div class="price-value-standard" style="border:5px solid #905cea;border-radius: 50%;color: #6458ee;">
-    	<h4 class="pb-0 font-weight-bold">€ 499</h4>
-    </div></div>
-
-  <div class="card-body basic-body  standard-body" style="background-color: white;">
-    <ul class="text-left mt-4 mb-5">
-    	<li>Local Three Pack Placement <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Basic Local Posts Setup <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Special Attributes Setup <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Yelp & Other Major Local Listings <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Primary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Multi Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Website On Page Optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li style="border-bottom: none;" class="">Keywords <span><i class="fa-solid fa-check"></i></span></li>
-    </ul>
-   
-  </div>
-  <div class="pricingTable-signup " style="background-image: linear-gradient(to top, #3931AF , #0F9FEA); ">
-                        <a href="#">Buy Now</a>
-                    </div>
-</div>
-					</div>
-					<div class="col-md-6 col-lg-3 col-sm-12 mb-2 ">
-						<div class="card text-center border-0 mb-5" style="z-index: 1;">
-							<div class="card-header basic-header text-center text-white border-0 py-4" style="background-image: linear-gradient(to right, 
-#6ac366 , #35ae61);">
-    <p class="mb-0">Premium</p>
-    <h3 class="mt-0 mb-1">Local Powerhoue</h3>
-    <div class="price-value-premium">
-    	<h4 class="pb-0 font-weight-bold">€ 750</h4>
-    </div>
-  </div>
 
 
-
-						
-  
-  <div class="card-body  basic-body">
-    <ul class="text-left mt-4">
-    	<li>TPrimary Business Listings <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Single Address optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Website On Page optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Keywords <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Duplicate Local Content Cleanup <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>Google Maps optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    	<li>High DA Content Based Backlinks <span><i class="fa-solid fa-check"></i></span></li>
-    	<li style="border-bottom: none;">Internal Links optimisation <span><i class="fa-solid fa-check"></i></span></li>
-    </ul>
-    
-  </div>
-<div class="pricingTable-signup-1">
-                        <a href="#">Buy Now</a>
-                    </div>
-</div>
-					</div>
-					<div class="col-lg-1 image-1">
-						<img src="/static/img/Shape 6.png" class="" style="width: 100%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	right:0;
-	left:0;">
-					</div>
-				</div>
-			</div>
-		</section>
-
-<section class=" register" id="C4">
+<section class="register" id="free-quote">
 <div class="container">
                 <div class="row">
                     
                     <div class="col-md-12 register-right">
 
                         <div class="tab-content" id="myTabContent">
-                        	<h1 class="text-center mb-0 mt-5 " style="color: #3931AF;">Get a Free Quote</h1>
+                        	<h2 class="text-center mb-0 mt-5 h2"
+>Get a Free Quote</h2>
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <form action="/contact/" method="POST">
                                 		{% csrf_token %}
@@ -379,7 +1028,7 @@ REPORTING</strong></h1>
                                         </div>
                                     </div> 
                                         <div class="col-md-6">
-                                      <input type="submit" class="btnRegister"  value="Contact"/>
+                                      <input type="submit" class="btnRegister"  value="Submit"/>
                                   </div>
                                 </div>
 
@@ -394,56 +1043,37 @@ REPORTING</strong></h1>
 </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<section class="reviews text-white" id="reviews">
 			<div class="container-fluid">
 				<div class="row justify-content-center py-5">
 						<div class="col-md-9 col-lg-9 col-sm-9">
 					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 						 <ol class="carousel-indicators ">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="border-"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
 						<p class="mb-0">REVIEWS</p>
-						<h2 class="mt-0 mb-4"><strong>What People Say</strong></h2>
-						<div class="card mb-5 shadow-lg p-3" style="color: #a581fa">
-							<div class="d-inline-bloc" style="display: inline-block;">
-							<img src="/static/img/user-icon.PNG" height="56px" width="50px" alt="" style="float: left; margin-top:5px; " class="mr-2">
-							<p class="mb-0" style="font-size: 22px;">Mihuel Henry</p>
-							<h1 class=" mt-0">CEO | dresslomar.com</h1></div>
-							<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Iste saepe sapiente, beatae veniam hic enim nam quis obcaecati quidem, sit eveniet illo iure, itaque sint nobis reprehenderit tenetur libero consequatur!</p>
+						<h3 class="mt-0 mb-4"><strong>What People Say</strong></h3>
+						<div class="card mb-5 shadow-lg p-3 card-reviews">
+							<div class="d-inline-bloc">
+							<img src="/static/img/user-icon.PNG" height="56px" width="50px" alt="icon" class="mr-2">
+							<p class="mb-0">Bradley Taafe</p>
+							<h2 class=" mt-0">COO Dental Clinic UK</h2></div>
+							<p>MSO is amazing! I was previously signed up to another SEO agency and it felt like I was pouring money into the drain. MSO is different. I saw my rankings start to increase almost immediately. We started having high quality leads and improvement in our google rankings. They are very quick to respond to emails and nothing is too much trouble. I'm paying less than before and getting MUCH better results.</p>
 						</div>
 					
     </div>
     <div class="carousel-item">
     <p class="mb-0">REVIEWS</p>
-						<h2 class="mt-0 mb-4"><strong>What People Say</strong></h2>
-						<div class="card mb-5 shadow-lg p-3" style="color: #a581fa">
-							<div class="d-inline-bloc" style="display: inline-block;">
-							<img src="/static/img/user-icon.PNG" height="56px" width="50px" alt="" style="float: left; margin-top:5px; " class="mr-2">
-							<p class="mb-0" style="font-size: 22px;">Mihuel Henry</p>
-							<h1 class=" mt-0">CEO | dresslomar.com</h1></div>
-							<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Iste saepe sapiente, beatae veniam hic enim nam quis obcaecati quidem, sit eveniet illo iure, itaque sint nobis reprehenderit tenetur libero consequatur!</p>
+						<h3 class="mt-0 mb-4"><strong>What People Say</strong></h3>
+						<div class="card mb-5 shadow-lg p-3 card-reviews">
+							<div class="d-inline-bloc">
+							<img src="/static/img/user-icon.PNG" height="56px" width="50px" alt="icon" class="mr-2">
+							<p class="mb-0">Cobley Moss</p>
+							<h2 class=" mt-0">Legal Services UK</h2></div>
+							<p>Would highly recommend the team at MSO. As a small business owner my business has gone through the roof only after a few months. I'm now confident my website is in good hands. Very professional service provided and look forward to working with them for hopefully many years to come. <span class="text-white">Very professional service provided and look forward to working with them for hopefully many years to come.</span></p>
 						</div>
     </div>
    
@@ -458,11 +1088,11 @@ REPORTING</strong></h1>
   </a></div>
   <div class="icons">
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon ml-2 py-3" aria-hidden="true" style="background-color: grey;"></span>
+    <span class="carousel-control-prev-icon ml-2 py-3" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon mr-2 py-3" aria-hidden="true" style="background-color: grey;"></span>
+    <span class="carousel-control-next-icon mr-2 py-3" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a></div>
 </div>
@@ -497,34 +1127,40 @@ REPORTING</strong></h1>
 			<div class="container mb-4 border-bottom border-primary">
 				<div class="row py-5">
 					<div class="col-lg-4 col-md-4 border-right border-primary">
-						<h1 class="mt-2 text-dark mb-4" style="font-weight:bolder;font-size: 40px;color: black;">MSO</h1>
+						<h2 class="mt-2 text-dark mb-4">MSO</h2>
 						<p class="mt-3"><i class="fas fa-map-marker-alt"></i><span class="pl-3">82 Kind Street, Manchester M2 4WQ</span></p>
             <p><i class="fas fa-phone-alt align-self-center"></i><a href="tel:+08002118289" class="pl-2">012939393</a></p>
             <p><i class="fas fa-envelope align-self-center"></i><a href="mailto:seo@gmail.com" class="pl-2">seo@gmail.com</a></p>
 					</div>
 					<div class="col-lg-4 col-md-4">
-						<h1 class="mb-4 mt-3 text-dark"><strong>OUR SERVICES</strong></h1>
+						<h3 class="mb-4 mt-3 text-dark font-weight-normal"><strong>OUR SERVICES</strong></h3>
 						<ul>
-							<li><span>> </span>SEO for SMBs</li>
-							<li><span>> </span>Enterprise SEO</li>
-							<li><span>> </span>National SEO</li>
-							<li><span>> </span>International SEO</li>
-							<li><span>> </span>White-label SEO</li>
+							<li class="font-weight-bold">SEO for SMBs</li>
+							<li class="font-weight-bold">Enterprise SEO</li>
+							<li class="font-weight-bold">National SEO</li>
+							<li class="font-weight-bold">International SEO</li>
+							<li class="font-weight-bold">White-label SEO</li>
 						</ul>
 					</div>
 					<div class="col-lg-4   col-md-4 news-letter border-left border-primary">
-					<h1 class="mb-3 mt-3 text-dark"><strong>NEWSLETTER</strong></h1>
-					<p class="pt-3 mr-5">Stay updated with our latest news and offers, please enter above your email address</p>
-					<button class="btn border-primary text-primary px-4 py-3">E-mail Address <span class="pl-1"> <	</span></button>
+					<h3 class="mb-3 mt-3 text-dark text-uppercase"><strong>Policies</strong></h3>
+				<ul>
+							<li class="font-weight-bold">Intellectual Rights Policy</li>
+							<li class="font-weight-bold">Disclaimer Policy</li>
+							<li class="font-weight-bold">Cookie Policy</li>
+							<li class="font-weight-bold">Terms and Conditions</li>
+						</ul>
 					
 					</div>
 				</div>
 			</div>
 			
 		</footer>
+   <script>
+    
+</script>
 		 <script src="/static/js/main.js"></script>
-
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script></body>
-</html>
+</html>		
