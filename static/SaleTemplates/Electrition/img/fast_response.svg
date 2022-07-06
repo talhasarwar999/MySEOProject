@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>fast response</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fast-response">
+            <circle id="Oval-Copy-2" fill="#F1C400" fill-rule="nonzero" cx="64" cy="64" r="64"></circle>
+            <polygon id="Line-2" fill="#FBF0BF" fill-rule="nonzero" points="63 20 66 20 66 38 63 38"></polygon>
+            <polygon id="Line-2" fill="#FBF0BF" fill-rule="nonzero" transform="translate(100.000000, 64.500000) rotate(-270.000000) translate(-100.000000, -64.500000) " points="98.5 55.5 101.5 55.5 101.5 73.5 98.5 73.5"></polygon>
+            <polygon id="Line-2-Copy" fill="#FBF0BF" fill-rule="nonzero" transform="translate(31.000000, 64.500000) rotate(-270.000000) translate(-31.000000, -64.500000) " points="29.5 55.5 32.5 55.5 32.5 73.5 29.5 73.5"></polygon>
+            <polygon id="Line-2" fill="#FBF0BF" fill-rule="nonzero" transform="translate(91.500000, 40.000000) rotate(-315.000000) translate(-91.500000, -40.000000) " points="90 31 93 31 93 49 90 49"></polygon>
+            <polygon id="Line-2" fill="#FBF0BF" fill-rule="nonzero" transform="translate(39.500000, 40.000000) scale(-1, 1) rotate(-315.000000) translate(-39.500000, -40.000000) " points="38 31 41 31 41 49 38 49"></polygon>
+            <path d="M71.786073,72.6531025 C69.6964491,75.5249266 65.5374888,75.8517825 63.0263333,73.3406272 C60.5151778,70.8317259 60.8420339,66.6705113 63.713858,64.5808874 L92.8919513,43.4750092 L71.786073,72.6531025 Z" id="Stroke-17-Copy-2" fill="#FFFFFF" transform="translate(77.112770, 59.254191) rotate(24.000000) translate(-77.112770, -59.254191) "></path>
+            <path d="M99.2229234,91.9796687 C105.334751,84.4882912 109,74.922178 109,64.5 C109,40.4756134 89.5243866,21 65.5,21 C41.4756134,21 22,40.4756134 22,64.5 C22,74.8654594 25.6254643,84.3841462 31.6775105,91.857178" id="Oval-2" stroke="#FFFFFF" stroke-width="7"></path>
+        </g>
+    </g>
+</svg>

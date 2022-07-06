@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-V2" transform="translate(-183.000000, -4659.000000)" stroke-width="2">
+            <g id="Blog" transform="translate(0.000000, 4032.000000)">
+                <g id="Group-14" transform="translate(205.000000, 649.000000) rotate(-180.000000) translate(-205.000000, -649.000000) translate(184.000000, 628.000000)">
+                    <circle id="Oval-6" stroke="#DCDCDC" fill="#FFFFFF" cx="21" cy="21" r="21"></circle>
+                    <path d="M19,27 L24.749,21.251 C24.8875,21.1125 24.8875,20.8875 24.749,20.749 L19,15" id="Arrow" stroke="#A3A3A3" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

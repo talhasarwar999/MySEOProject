@@ -371,3 +371,22 @@ def contact(request):
         return redirect('index')
     return render(request,"index.html")
 
+def businessale(request):
+    return render(request,"BusinesSale/index.html")
+
+def businessrapid(request):
+    return render(request,"BusinessRapid/index.html")
+
+def businessuccess(request):
+    return render(request,"BusinesSuccess/index.html")
+
+def chelseadentalclinic(request):
+    return render(request,"Dental/index.html")
+def team(request):
+    return render(request,"Dental/meet-the-team.html")
+
+def electric_mr(request):
+    return render(request,"Electrition/index.html")
+
+def ratedpeople(request):
+    return render(request,"RatedPeople/index.html")

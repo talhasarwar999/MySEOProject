@@ -184,12 +184,12 @@ body{
   color: white;
 }
 #hero {
-  height: 1050px;
+  height: 950px;
   background: url("/static/img/bgimg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  background-position: right 160px bottom;
+  background-position: right 0px bottom;
   background-color: #F2F6FD;
 }
 .hero-container .free-quotes{
@@ -244,19 +244,10 @@ margin-top:-110px;
 }
 
 .phone{
-	background-color: white;
 	border-radius: 50px;
 	padding: 3px 3px 3px 19px;
-	font-size: 15px;
+	font-size: 20px;
   margin-left: 390px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.phone button{
-	border-radius: 50px;
-	padding: 10px 30px 10px 30px;
-	font-size: 14px;
-  color: white;
-  margin-left: 25px;
 }
 
 
@@ -356,7 +347,7 @@ margin-top:-110px;
 }
 
 .card-3 .card-heading {
-  background: url("/static/img/dotted.png") top left/cover no-repeat;
+  background-color: #3EB4FA;
   display: table-cell;
   width: 50%;
   position: relative;
@@ -485,33 +476,27 @@ padding-bottom: 130px;
 .off-seo-page .off-page{
 text-decoration: none;color: #3763bb;
 }
-.off-seo-page small{
-	font-size: 27px;
-font-weight: 500;
+.off-seo-page ul{
+list-style-type: none;
 }
 .off-seo-page h2{
-	font-size: 33px;
+	font-size: 28px;
 }
-.off-seo-page button{
+.off-seo-page a{
 	font-size: 17px;
 	letter-spacing: 2px;
 	font-weight: bolder;
 	border-radius: 50px;
 	padding:20px 30px 20px 30px;
-	border:3px solid #3763bb;
+	border:3px solid white;
 	color: #3763bb;
 }
-.off-seo-page button:hover{
-	color: white;
-	background-color: #3763bb;
-}
 .off-seo-page .cards{
-	background-image: linear-gradient(to right, #4f5dff , #28a7ff);
-	margin-right: -15px;
+	background-image: linear-gradient(to bottom, #28a7ff,#4f5dff);
 	color:white;
-	padding: 20px 170px 20px 30px;
 	font-size: 19px;
-	border-radius:6px 0 0 6px;
+	border-radius:16px;
+  border:none;
 }
 
 
@@ -998,7 +983,7 @@ footer .our-services{
 
 @media screen and (max-width: 1100px){
   #hero {
-  height: 1050px;
+  height: 950px;
   background: url("/static/img/bgimg.jpg");
   background-size: cover;
   position: relative;
@@ -1020,7 +1005,7 @@ footer .our-services{
     margin-top: -8px;
     float: left;
    padding: 2px 4px 2px 4px;
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -1030,7 +1015,7 @@ footer .our-services{
     margin-top: -8px;
     float: left;
    padding: 2px 4px 2px 4px;
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1460px){
@@ -1039,7 +1024,7 @@ footer .our-services{
     margin-top: -8px;
     float: left;
    padding: 2px 4px 2px 4px;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   #hero .hero-container {
@@ -1130,12 +1115,12 @@ color: #3931AF;
     margin-left: 40px;
     margin-top: -8px;
    padding: 2px 4px 2px 4px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .phone button{
   border-radius: 50px;
   padding: 10px 17px 10px 17px;
-  font-size: 14px;
+  font-size: 20px;
   color: white;
   margin-left: 0;
 }
@@ -1181,16 +1166,16 @@ color: #3931AF;
  /*=====---START BG img TOP & Text MQ----=====*/
 @media screen and (max-width: 1202px){
 .phone{
-	background-color: white;
 	border-radius: 50px;
 	padding: 3px 3px 3px 19px;
 	font-size: 15px;
   text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.phone button{
-padding: 12px 91px 12px 91px;
-margin: 1px -40px 1px -50px;
+ .templates .preview{
+display: inline-block;
+}
+.templates .live-preview{
+display: none;
 }
 }
 @media screen and (max-width: 1140px){
@@ -1293,13 +1278,19 @@ margin-top: -100px;
 .off-seo-page h2{
   font-size: 25px;
 }
-.off-seo-page button{
+.off-seo-page h3{
+  font-size: 20px;
+}
+.off-seo-page h4{
+  font-size: 18px;
+}
+.off-seo-page a{
   font-size: 12px;
   letter-spacing: 0;
   font-weight: bolder;
   border-radius: 50px;
   padding:10px 15px 10px 15px;
-  border:2px solid #3763bb;
+  border:2px solid white;
   color: #3763bb;
 }
 .off-seo-page button:hover{
@@ -1661,9 +1652,13 @@ footer .our-services{
 
 /*=====---START Service MQ-----=====*/
 .services{
-  margin-top: -160px;
+  margin-top: -40px;
   background-color: #F2F6FD;
   padding-top: 10px;
+}
+.googlecert .text-certified{
+  text-align: left;
+  margin-top: -60px;
 }
 /*=====---END Reviews MQ-----=====*/
   }
@@ -1824,6 +1819,7 @@ font-size: 20px;}
 }
 .text-certified{
   text-align: left;
+  margin-top: -64px;
 }
 .row-design{
   align-items: center;
@@ -1956,6 +1952,9 @@ margin-left: 0% !important;
 .about{
   display: none;
 }
+.about-certified button{
+border-radius: 7px;
+}
 @media screen and (max-width: 991px){
   .nav-item .fa-ph{
   display: block;
@@ -1971,4 +1970,31 @@ margin-right:8%; font-family: 'Lato', sans-serif;cursor: pointer;
 .phone{
   display: none;
 }
+}
+.templates .card{
+	border-radius: 10px 10px 10px 10px;
+	background-color: #EBECFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.templates img{
+border-radius: 10px 10px 0 0;
+}
+.templates h3{
+font-size: 17px; display: inline-block;
+}
+.templates small{
+font-size: 15px; display: inline-block;
+}
+.templates a{
+background-color:#5a00f0;
+}
+.templates .card-bodyy{
+display: flex;
+}
+.templates .card-bodyy a{
+flex:1;
+}
+ .preview{
+display: none;
 }

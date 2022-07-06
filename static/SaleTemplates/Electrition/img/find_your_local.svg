@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>find your local</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="find-your-local">
+            <circle id="Oval" fill="#F1C400" fill-rule="nonzero" cx="64" cy="64" r="64"></circle>
+            <path d="M64,112 C37.4907586,112 16,90.5108966 16,64 C16,37.4907586 37.4907586,16 64,16 C90.5092414,16 112,37.4907586 112,64 C112,90.5108966 90.5092414,112 64,112 Z" id="Path" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round"></path>
+            <polyline id="Path-2" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(66.365445, 16.365444) rotate(45.000000) translate(-66.365445, -16.365444) " points="61.8633469 11.8654444 61.8633469 20.8654444 70.867543 20.8654444"></polyline>
+            <polyline id="Path-2" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(62.365445, 112.365445) rotate(-135.000000) translate(-62.365445, -112.365445) " points="57.8633473 107.865445 57.8633473 116.865445 66.8675434 116.865445"></polyline>
+            <g id="Pin" transform="translate(40.000000, 32.000000)">
+                <path d="M22.6387111,64.0837029 L5.18267591,39.4074847 C-1.83224249,30.2533758 -0.8522139,15.2282834 7.35440786,7.1959979 C16.4761949,-1.73201161 31.2515971,-1.73201161 40.3720992,7.1959979 C48.5784867,15.2280541 49.5589155,30.2530424 42.5789359,39.3614534 L23.8632114,65.8145498 L22.6387111,64.0837029 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval" fill="#F1C400" cx="23.3204879" cy="23.3167702" r="6.50465838"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

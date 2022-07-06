@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>7, 365 days a year</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7,-365-days-a-year">
+            <circle id="Oval" fill="#F1C400" fill-rule="nonzero" cx="64" cy="64" r="64"></circle>
+            <path d="M94,64.5 C94,80.7931552 80.792138,94 64.5,94 C48.207862,94 35,80.7931552 35,64.5 C35,48.207862 48.207862,35 64.5,35 C80.792138,35 94,48.207862 94,64.5 Z" id="Path" fill="#FFFFFF"></path>
+            <path d="M64,112 C37.4907586,112 16,90.5108966 16,64 C16,37.4907586 37.4907586,16 64,16 C90.5092414,16 112,37.4907586 112,64 C112,90.5108966 90.5092414,112 64,112 Z" id="Path" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"></path>
+            <path d="M65,64 L65,40 L65,64 Z" id="Path" stroke="#F1C400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M65,64 L48,64 L65,64 Z" id="Path" stroke="#F1C400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path-2" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(66.365445, 16.365444) rotate(45.000000) translate(-66.365445, -16.365444) " points="61.8633469 11.8654444 61.8633469 20.8654444 70.867543 20.8654444"></polyline>
+            <polyline id="Path-2" stroke="#FBF0BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(62.365445, 112.365445) rotate(-135.000000) translate(-62.365445, -112.365445) " points="57.8633473 107.865445 57.8633473 116.865445 66.8675434 116.865445"></polyline>
+        </g>
+    </g>
+</svg>
